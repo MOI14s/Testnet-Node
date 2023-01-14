@@ -31,6 +31,8 @@
 | 4+ | 8+ | 100 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
 ## <img src="https://img.shields.io/badge/-2-orange"/> GETTING STARTED
+> The operating system must also have Aws Cli <img src="https://img.shields.io/badge/%20Aws%20CLI-Tools-blueviolet"/> & <img src="https://img.shields.io/badge/Docker-images-blue"/> installed
+
 **1. Install AWS CLI tools**
 ```javascript
 sudo apt-get install awscli
