@@ -1,10 +1,8 @@
-# Tesnet Node Goracle
 
 <p align="center">
 <img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Goracle/goracle.png"></p>
 
-<p align="center"> Get Price, Sports, Weather, NFT, Flight</p>
-<p align="center"> Custom Price Data On-Chain Powering the future of the blockchain. </p>
+<p align="center">Get Price, Sports, Weather, NFT, Flight Custom Price Data On-Chain Powering the future of the blockchain.
 
 <div id="badges">
   <p align="center">
@@ -12,9 +10,8 @@
     <img src="https://img.shields.io/badge/LinkedIn-blue?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Badge"/>
   </a>
   <a href="your-twitter-URL">
-    <img src="https://img.shields.io/badge/Twitter-blue?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter Badge"/>
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
   </a>
-    <img src="https://img.shields.io/badge/TikTok-%23000000.svg?style=for-the-badge&logo=TikTok&logoColor=white"/>
   <a href="j">
   <a href="your-youtube-URL">
     <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"/>
@@ -25,3 +22,18 @@
     <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"/>
   </p>
 </div>
+
+## Sytem Requirements
+| vCPU | RAM    | DISK| OS
+| :-------- | :------- | :---| :----|
+| 4      | 8++ | 100 GB++ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+
+## Get Started
+**1. Install AWS cli tools**
+```javascript
+sudo apt-get install awscli
+```
+**2. Install Goracle CLI tools**
+```javascript
+sudo apt-get install awscli
+```
