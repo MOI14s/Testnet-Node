@@ -24,9 +24,9 @@
 </div>
 
 ## Sytem Requirements
-| vCPU | RAM    | DISK| OS
-| :-------- | :------- | :---| :----|
-| 4+ | 8+ | 100 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
+| vCPU | RAM | DISK | OS |
+| :--  | :-- | :--- | :- |
+| 4+ | 8+ | 100 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
 ## Get Started
 **1. Install AWS CLI tools**
