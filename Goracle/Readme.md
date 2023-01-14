@@ -29,7 +29,7 @@
 | 4      | 8++ | 100 GB++ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 
 ## Get Started
-**1. Install AWS cli tools**
+**1. Install AWS CLI tools**
 ```javascript
 sudo apt-get install awscli
 ```
