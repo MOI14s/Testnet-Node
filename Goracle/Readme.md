@@ -1,7 +1,7 @@
 # Tesnet Node Goracle
 
 <p align="center">
-<img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet_Goracle/main/goracle.png"></p>
+<img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Goracle/goracle.png"></p>
 
 <p align="center"> Get Price, Sports, Weather, NFT, Flight, Custom</p>
 <p align="center"> Price Data On-Chain Powering the future of the blockchain. </p>
