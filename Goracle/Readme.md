@@ -23,12 +23,12 @@
   </p>
 </div>
 
-## :fast_forward: Sytem Requirements
+## <img src="https://img.shields.io/badge/-1-orange"/> REQUIREMENTS
 | vCPU | RAM | DISK | OS |
 | :--  | :-- | :--- | :- |
 | 4+ | 8+ | 100 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
-## :fast_forward: Get Started
+## <img src="https://img.shields.io/badge/-2-orange"/> GETTING STARTED
 **1. Install AWS CLI tools**
 ```javascript
 sudo apt-get install awscli
