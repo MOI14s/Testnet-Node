@@ -1,4 +1,4 @@
-# Testnet-Node
+# Testnet Node
 
 <table>
   <tbody>
