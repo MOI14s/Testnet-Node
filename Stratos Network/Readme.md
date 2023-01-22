@@ -65,7 +65,10 @@ make install
 ```javascript
 cd $HOME
 ```
-    
+Replace <your_node_moniker> with your node name
+```javascript
+./stchaind init "<your_node_moniker>"
+```
 ### 4. Download the `genesis.json` and `config.toml` files
 ```javascript
 wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/genesis.json
@@ -73,11 +76,75 @@ wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/gen
 ```javascript
 wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/config.toml
 ```
-
-### 5. Move the downloaded `config.toml` and genesis.json files to `$HOME/.stchaind/config/`
+Move the downloaded `config.toml` and `genesis.json` files
 ```javascript
 mv config.toml $HOME/.stchaind/config/
 ```
 ```javascript
 mv genesis.json $HOME/.stchaind/config/
+```
+Change `moniker` in the downloaded `config.toml` file
+```bash
+nano config.toml
+moniker = "<your_node_moniker>"
+
+# After edit `ctrl+x' 'y' 'enter'
+```
+
+### 5. Run node in background
+```javascript
+cd $HOME
+```
+```javascript
+./stchaind start 2>&1 >> chain.log &
+```
+Use the following Linux Command to stop your node.
+```javascript
+pkill stchaind
+```
+### 6. Check the status of the node
+```javascript
+./stchaind status
+```
+The output will be similar to
+```javascript
+./stchaind status
+{
+    "NodeInfo": {
+        "protocol_version": {
+            "p2p": "8",
+            "block": "11",
+            "app": "0"
+        },
+        "id": "16a0758d175cbf5c08d41dffa73eb5c0190869ed",
+        "listen_addr": "tcp://0.0.0.0:26656",
+        "network": "test-chain",
+        "version": "0.34.21",
+        "channels": "40202122233038606100",
+        "moniker": "node",
+        "other": {
+            "tx_index": "on",
+            "rpc_address": "tcp://127.0.0.1:26657"
+        }
+    },
+    "SyncInfo": {
+        "latest_block_hash": "697A2DB243E5191C6D85285A2ADD4924526924969C6C70FE71827C9FE41D4373",
+        "latest_app_hash": "E978F87BB23D351B853F5F0CF9FBBBA4464FF5D7CE3746BF3E2357F28CBCE041",
+        "latest_block_height": "497",
+        "latest_block_time": "2023-01-11T01:10:37.562405326Z",
+        "earliest_block_hash": "139676534FECFA507D56A06B03BD528E70ACA6D4DB6560219707011966613DE4",
+        "earliest_app_hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+        "earliest_block_height": "1",
+        "earliest_block_time": "2023-01-09T17:08:58.4890503Z",
+        "catching_up": false
+    },
+    "ValidatorInfo": {
+        "Address": "18A7169C1B427D994133F7B3D4504E92789DB37C",
+        "PubKey": {
+            "type": "tendermint/PubKeyEd25519",
+            "value": "69gothWTE9FJBZ5gBjjSNhg8y/5SsI1hBaD81Dum7lo="
+        },
+        "VotingPower": "500000"
+    }
+}
 ```
