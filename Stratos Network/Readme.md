@@ -65,7 +65,7 @@ make install
 ```javascript
 cd $HOME
 ```
-Replace <your_node_moniker> with your node name
+> Replace <your_node_moniker> with your node name
 ```javascript
 ./stchaind init "<your_node_moniker>"
 ```
@@ -76,14 +76,14 @@ wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/gen
 ```javascript
 wget https://raw.githubusercontent.com/stratosnet/stratos-chain-testnet/main/config.toml
 ```
-Move the downloaded `config.toml` and `genesis.json` files
+> Move the downloaded `config.toml` and `genesis.json` files
 ```javascript
 mv config.toml $HOME/.stchaind/config/
 ```
 ```javascript
 mv genesis.json $HOME/.stchaind/config/
 ```
-Change `moniker` in the downloaded `config.toml` file
+> Change `moniker` in the downloaded `config.toml` file
 ```bash
 nano config.toml
 moniker = "<your_node_moniker>"
@@ -98,7 +98,7 @@ cd $HOME
 ```javascript
 ./stchaind start 2>&1 >> chain.log &
 ```
-Use the following Linux Command to stop your node.
+> Use the following Linux Command to stop your node.
 ```javascript
 pkill stchaind
 ```
@@ -106,7 +106,7 @@ pkill stchaind
 ```javascript
 ./stchaind status
 ```
-The output will be similar to
+> The output will be similar to
 ```javascript
 ./stchaind status
 {
@@ -147,4 +147,31 @@ The output will be similar to
         "VotingPower": "500000"
     }
 }
+```
+### 7. Setup a wallet and faucet
+> Create New Wallet. Replace `<your wallet name>` for your wallet name
+```javascript
+./stchaind keys add <your wallet name> --hd-path="m/44'/606'/0'/0/0" --keyring-backend=test
+```
+> Output Example
+```javascript
+- name: myWallet
+  type: local
+  address: st1x2c6gy4vr8alsyzuqr2x8x8xxtvs97sk3jt6dp
+  pubkey: '{"@type":"/stratos.crypto.v1.ethsecp256k1.PubKey","key":"A7HCZTlHEarBPabkOgId5SlyQKdqEsbXJHit7y9LXRy+"}'
+  mnemonic: ""
+
+
+**Important** write this mnemonic phrase in a safe place.
+It is the only way to recover your account if you ever forget your password.
+
+venue chest pattern tool certain identify adult theme thing public foster promote pave topple thing uncle brisk suffer present popular envelope wrap holiday goddess
+```
+> Claim Faucet
+```javascript
+curl --header "Content-Type: application/json" --request POST --data '{"denom":"stos","address":"your wallet address"} ' https://faucet-tropos.thestratos.org/credit
+```
+> Check wallet account balance
+```javascript
+./stchaind query account <your wallet address>
 ```
