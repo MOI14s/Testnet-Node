@@ -1,8 +1,8 @@
 
 <p align="center">
-<img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Goracle/goracle.png"></p>
+<img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/shardeum.png"></p>
 
-<p align="center">Get Price, Sports, Weather, NFT, Flight Custom Price Data On-Chain Powering the future of the blockchain.
+<p align="center">Shardeum is a blockchain that supports EVM smart contracts.
 
 <div id="badges">
   <p align="center">
