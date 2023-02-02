@@ -31,30 +31,23 @@
 | 4+ | 16+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
 ## GETTING STARTED
-> The operating system must also have <img src="https://img.shields.io/badge/Docker-Compose-blue"/> <img src="https://img.shields.io/badge/Docker-images-blue"/> installed
+> The operating system must also have <img src="https://img.shields.io/badge/Docker-Compose-blue"/> & <img src="https://img.shields.io/badge/Docker-images-blue"/> (version 20.10.12 or higher) installed
 
-**1. Shell**
+### 1. Shell
 ```bash
 curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && chmod +x installer.sh && ./installer.sh
 ```
     
-Enter y to setup the web based dashboard:
+> Enter y to setup the web based dashboard:
     
 ```javascript
 Do you want to run the web based Dashboard? (y/n): y 
+Set the password to access the Dashboard: Set Your Password (optional)
+Add a custom session port for the web based dashboard or hit enter for port 8080: (enter for port 8080)
+What base directory should the node use (defaults to ~/.shardeum): (enter for defaults)
 ```
 
-Set a password for dashboard access (optional)
+### 2. Install
 ```javascript
-Set the password to access the Dashboard: 
-```
-
-Add a custom session port for the web based dashboard or hit enter for port 8080:
-
-```javascript
-Enter
-```
-**2. Install Goracle CLI tools**
-```javascript
-sudo apt-get install awscli
+b
 ```
