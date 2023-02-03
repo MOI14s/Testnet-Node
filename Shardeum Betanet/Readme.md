@@ -7,17 +7,17 @@
 <div id="badges">
   <p align="center">
    <a href="https://shardeum.org">
-  <img src="https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white"/>
+  <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white&style=flat"/>
   <a href="https://twitter.com/shardeum">
-    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white&style=flat"/>
   </a>
   <a href="https://discord.gg/shardeum">
-    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white&style=flat"/>
   </a>
   <a href="https://telegram.me/shardeum">
-    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&style=flat"/>
   <a href="https://www.reddit.com/r/shardeum/">
-    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white"/>
+    <img src="https://img.shields.io/badge/Reddit-FF4500?style=for-the-badge&logo=reddit&logoColor=white&style=flat"/>
   </p>
 </div>
 
@@ -29,7 +29,7 @@
 | 4+ | 8+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)|
 
 ## GETTING STARTED
-> The operating system must also have <img src="https://img.shields.io/badge/Docker-Compose-blue"/> & <img src="https://img.shields.io/badge/Docker-images-blue"/> (version 20.10.12 or higher) installed
+> The operating system must also have <img src="https://img.shields.io/badge/Docker%20Image-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> (version 20.10.12 or higher) & <img src="https://img.shields.io/badge/Docker%20Compose-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> installed
 
 ### 1. Clone Repository & SetUp Dashboard
 ```bash
@@ -46,10 +46,10 @@ What base directory should the node use (defaults to ~/.shardeum): (enter for de
 ```
 
 ### 2. Open Validator CLI
-```javascript
+```bash
 $HOME/.shardeum/shell.sh
 ```
-### 3. Open Validator GUI
+### 3. Open Validator GUI    
 ```
 operator-cli gui start
 ```
