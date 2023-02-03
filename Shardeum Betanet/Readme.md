@@ -28,12 +28,12 @@
     
 | vCPU | RAM | DISK | OS |
 | :--  | :-- | :--- | :- |
-| 4+ | 16+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
+| 4+ | 8+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) |
 
 ## GETTING STARTED
 > The operating system must also have <img src="https://img.shields.io/badge/Docker-Compose-blue"/> & <img src="https://img.shields.io/badge/Docker-images-blue"/> (version 20.10.12 or higher) installed
 
-### 1. Shell
+### 1. Clone Repository & SetUp Dashboard
 ```bash
 curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && chmod +x installer.sh && ./installer.sh
 ```
@@ -42,12 +42,20 @@ curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh 
     
 ```javascript
 Do you want to run the web based Dashboard? (y/n): y 
-Set the password to access the Dashboard: Set Your Password (optional)
-Add a custom session port for the web based dashboard or hit enter for port 8080: (enter for port 8080)
+Set the password to access the Dashboard: (Set Your Password)
+Add a custom session port for the web based dashboard or hit enter for port 8080: (enter for default port)
 What base directory should the node use (defaults to ~/.shardeum): (enter for defaults)
 ```
 
-### 2. Install
+### 2. Open Validator CLI
 ```javascript
-b
+$HOME/.shardeum/shell.sh
+```
+### 3. Open Validator GUI
+```javascript
+operator-cli gui start
+```
+### 4. Go to web browser to enter Dashboard
+```bash
+https://YOURIPVPS:8080
 ```
