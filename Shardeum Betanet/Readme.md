@@ -96,7 +96,7 @@ operator-cli gui set password <type_new_password__here>
 ```
 
 # Support
-<img src="https://img.shields.io/github/stars/MOI14s/Testnet-Node?style=social"/>
+<img src="https://img.shields.io/github/stars/MOI14s/Testnet-Node?style=social"/>  <img alt="GitHub forks" src="https://img.shields.io/github/forks/MOI14s/Testnet-Node?style=social">
 
 We are a UI/UX Designer, Node Runners, Web Developer and Branding who just started and are still in the learning stage.
 
