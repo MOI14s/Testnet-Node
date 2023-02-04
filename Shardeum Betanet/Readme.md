@@ -55,5 +55,20 @@ operator-cli gui start
 ```
 ### 4. Go to web browser to enter Dashboard
 ```bash
-https://YOURIPVPS:8080
+https://YOURIPVPS:8080/maintenance
 ```
+<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/11.png"/>
+
+```bash
+click the “Start Node” button or run command "operator-cli start" on server
+```
+
+<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/12.png"/>
+
+```bash
+Claim Faucet SHM "https://docs.shardeum.org/faucet/claim" and Stake SHM
+```
+
+<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/13.png"/>
+
+<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/14.png"/>
