@@ -61,39 +61,37 @@ https://YOURIPVPS:8080/maintenance
 ```bash
 click the “Start Node” button or run command "operator-cli start" on server
 ```
-
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/12.png"/>
 
 ```bash
 Claim Faucet SHM "https://docs.shardeum.org/faucet/claim" and Stake SHM
 ```
+<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/15.png"/>
 
-<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/13.png"/>
-
-<img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/14.png"/>
-
-## Other Commands
-**1. Stop your Node**
+### Other Commands
+**Stop your Node**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
 ```bash
 operator-cli stop
 ```
-**2. Check your Node status**
+**Check your Node status**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
 ```bash
 operator-cli status
 ```
-**3. Set new password on Dashboard**
+**Set new password on Dashboard**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
 ```bash
 operator-cli gui set password <type_new_password__here>
 ```
+
+<hr>
 
 # Support
 <img src="https://img.shields.io/github/stars/MOI14s/Testnet-Node?style=social"/>  <img alt="GitHub forks" src="https://img.shields.io/github/forks/MOI14s/Testnet-Node?style=social">
