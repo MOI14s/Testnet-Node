@@ -1,4 +1,3 @@
-
 <p align="center">
 <img sizes="(max-width: 600px) 480px, 800px" src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/shardeum.png"></p>
 
@@ -72,3 +71,41 @@ Claim Faucet SHM "https://docs.shardeum.org/faucet/claim" and Stake SHM
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/13.png"/>
 
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/14.png"/>
+
+## Other Commands
+**1. Stop your Node**
+```bash
+$HOME/.shardeum/shell.sh
+```
+```bash
+operator-cli stop
+```
+**2. Check your Node status**
+```bash
+$HOME/.shardeum/shell.sh
+```
+```bash
+operator-cli status
+```
+**3. Set new password on Dashboard**
+```bash
+$HOME/.shardeum/shell.sh
+```
+```bash
+operator-cli gui set password <type_new_password__here>
+```
+
+# Support
+**MOI14s** <img src="https://img.shields.io/github/stars/MOI14s/Testnet-Node?style=social"/>
+
+We are a UI/UX Designer, Node Runners, Web Developer and Branding who just started and are still in the learning stage.
+
+## My Links
+
+<a href="https://nodes.moi14s.xyz"> <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white&style=flat"/>
+<a href="#"> <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white&style=flat"/>
+<a href="https://t.me/nodes_moi14s"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&style=flat"/>
+    
+## Thanks
+
+Thank you, don't forget to add stars.
