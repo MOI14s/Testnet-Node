@@ -69,21 +69,21 @@ Claim Faucet SHM "https://docs.shardeum.org/faucet/claim" and Stake SHM
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/15.png"/>
 
 ### Other Commands
-**Stop your Node**
+- **Stop your Node**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
 ```bash
 operator-cli stop
 ```
-**Check your Node status**
+- **Check your Node status**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
 ```bash
 operator-cli status
 ```
-**Set new password for Dashboard**
+- **Set new password for Dashboard**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
