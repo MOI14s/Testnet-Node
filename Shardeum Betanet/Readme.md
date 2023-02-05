@@ -93,14 +93,14 @@ operator-cli gui set password <type_new_password__here>
 
 <hr>
 
-# Support
+## Support
 <img src="https://img.shields.io/github/stars/MOI14s/Testnet-Node?style=social"/>  <img alt="GitHub forks" src="https://img.shields.io/github/forks/MOI14s/Testnet-Node?style=social">
 
 ## My Links
 
 <a href="https://nodes.moi14s.xyz"> <img src="https://img.shields.io/badge/Website-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white&style=flat"/>
 <a href="#"> <img src="https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white&style=flat"/>
-<a href="https://t.me/nodes_moi14s"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&style=flat"/>
+<a href="#"> <img src="https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white&style=flat"/>
     
 ## Thanks
 
