@@ -83,7 +83,7 @@ $HOME/.shardeum/shell.sh
 ```bash
 operator-cli status
 ```
-**Set new password on Dashboard**
+**Set new password for Dashboard**
 ```bash
 $HOME/.shardeum/shell.sh
 ```
