@@ -60,18 +60,15 @@ https://YOURIPVPS:8080/maintenance
 ```
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/11.png"/>
 
+### 5. Start Node Validator
 ```bash
-click the “Start Node” button
-```
-or run
-```
-operator-cli start
+click the “Start Node” button or run 'operator-cli start'
 ```
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/12.png"/>
 
-```bash
-Claim Faucet SHM "https://docs.shardeum.org/faucet/claim" and Stake SHM
-```
+### 6. Claim faucet SHM & stake SHM as Validator 
+Go to [FAUCET](https://docs.shardeum.org/faucet/claim) for Claim SHM
+
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/15.png"/>
 
 ### Other Commands
