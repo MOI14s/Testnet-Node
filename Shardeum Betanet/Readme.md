@@ -37,11 +37,13 @@ curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh 
     
 > Enter y to setup the web based dashboard:
     
-```javascript
+```
 Do you want to run the web based Dashboard? (y/n): y 
 Set the password to access the Dashboard: (Set Your Password)
-Add a custom session port for the web based dashboard or hit enter for port 8080: (enter for default port)
-What base directory should the node use (defaults to ~/.shardeum): (enter for defaults)
+Enter the port (1025-65536) to access the web based Dashboard (default 8080): (enter for default port)
+This allows p2p communication between nodes. Enter the first port (1025-65536) for p2p communication (default 9001): (enter for default)
+Enter the second port (1025-65536) for p2p communication (default 10001): (enter for default)
+What base directory should the node use (defaults to ~/.shardeum): (enter for default)
 ```
 
 ### 2. Open Validator CLI
