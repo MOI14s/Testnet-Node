@@ -61,7 +61,11 @@ https://YOURIPVPS:8080/maintenance
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/11.png"/>
 
 ```bash
-click the “Start Node” button or run command "operator-cli start" on server
+click the “Start Node” button
+```
+or run
+```
+operator-cli start
 ```
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/12.png"/>
 
