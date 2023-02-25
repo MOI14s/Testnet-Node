@@ -25,7 +25,7 @@
     
 | vCPU | RAM | DISK | OS |
 | :--  | :-- | :--- | :- |
-| 4+ | 8+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black) ![macOS](https://img.shields.io/badge/mac%20os-000000?style=for-the-badge&logo=macos&logoColor=F0F0F0)|
+| 4+ | 8+ | 60 GB+ | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)|
 
 ## GETTING STARTED
 > The operating system must also have <img src="https://img.shields.io/badge/Docker%20Image-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> (version 20.10.12 or higher) & <img src="https://img.shields.io/badge/Docker%20Compose-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> installed
