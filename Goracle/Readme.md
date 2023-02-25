@@ -32,12 +32,3 @@
 
 ## GETTING STARTED
 > The operating system must also have <img src="https://img.shields.io/badge/%20Aws%20CLI-Tools-blueviolet"/> <img src="https://img.shields.io/badge/Docker-images-blue"/> installed
-
-**1. Install AWS CLI tools**
-```javascript
-sudo apt-get install awscli
-```
-**2. Install Goracle CLI tools**
-```javascript
-sudo apt-get install awscli
-```
