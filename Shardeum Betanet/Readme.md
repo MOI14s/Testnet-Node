@@ -20,6 +20,11 @@
   </p>
 </div>
 
+## OFFICIAL DOCUMENT
+- Docs : https://docs.shardeum.org/
+- Run Validator : https://docs.shardeum.org/node/run/validator
+- Claim Faucet : https://docs.shardeum.org/faucet/claim
+     
 ## REQUIREMENTS
 > Minimum Hardware Specifications that will be used to run the node
     
@@ -30,14 +35,14 @@
 ## GETTING STARTED
 > The operating system must also have <img src="https://img.shields.io/badge/Docker%20Image-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> (version 20.10.12 or higher) & <img src="https://img.shields.io/badge/Docker%20Compose-4285F4?style=for-the-badge&logo=docker&logoColor=white&style=flat"/> installed
 
-### 1. Clone Repository & SetUp Dashboard
-```bash
+#### Clone Repository & SetUp Dashboard
+```javascript
 curl -O https://gitlab.com/shardeum/validator/dashboard/-/raw/main/installer.sh && chmod +x installer.sh && ./installer.sh
 ```
     
-> Enter y to setup the web based dashboard:
+#### Enter y to setup the web based dashboard:
     
-```
+```javascript
 Do you want to run the web based Dashboard? (y/n): y 
 Set the password to access the Dashboard: (Set Your Password)
 Enter the port (1025-65536) to access the web based Dashboard (default 8080): (enter for default port)
@@ -46,50 +51,49 @@ Enter the second port (1025-65536) for p2p communication (default 10001): (enter
 What base directory should the node use (defaults to ~/.shardeum): (enter for default)
 ```
 
-### 2. Open Validator CLI
-```bash
+#### Open Validator CLI
+```javascript
 $HOME/.shardeum/shell.sh
 ```
-### 3. Open Validator GUI    
-```
+#### Open Validator GUI    
+```javascript
 operator-cli gui start
 ```
-### 4. Go to web browser to enter Dashboard
-```bash
+#### Go to web browser to enter Dashboard
+```javascript
 https://YOURIPVPS:8080/maintenance
 ```
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/11.png"/>
 
-### 5. Start Node Validator
-```bash
-click the “Start Node” button or run 'operator-cli start'
-```
+#### Start Node Validator
+click the `Start Node` button or run command `operator-cli start` on Terminal
+
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/12.png"/>
 
-### 6. Claim faucet SHM & stake SHM as Validator 
-Go to [FAUCET](https://docs.shardeum.org/faucet/claim) for Claim SHM
+#### Claim faucet SHM & stake SHM as Validator 
+Go to `https://docs.shardeum.org/faucet/claim` for claim SHM
 
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/15.png"/>
 
-### Other Commands
-- **Stop your Node**
-```bash
-$HOME/.shardeum/shell.sh
-```
-```bash
+## Usefull Commands
+> Before running the command, must first go to `$HOME/.shardeum/shell.sh`
+
+**Stop your Node**
+```javascript
 operator-cli stop
 ```
-- **Check your Node status**
-```bash
-$HOME/.shardeum/shell.sh
+
+**Update Node**
+```javascript
+operator-cli update
 ```
-```bash
+
+**Check your Node status**
+```javascript
 operator-cli status
 ```
-- **Set new password for Dashboard**
-```bash
-$HOME/.shardeum/shell.sh
-```
-```bash
+     
+**Set new password for Dashboard**
+```javascript
 operator-cli gui set password <type_new_password__here>
 ```
