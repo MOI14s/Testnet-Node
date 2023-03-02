@@ -75,7 +75,7 @@ Go to `https://docs.shardeum.org/faucet/claim` for claim SHM
 
 <img src="https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/Shardeum%20Betanet/15.png"/>
 
-## Usefull Commands
+## USEFULL COMMANDS
 > Before running the command, must first go to `$HOME/.shardeum/shell.sh`
 
 **Stop your Node**
