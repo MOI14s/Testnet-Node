@@ -97,3 +97,6 @@ operator-cli status
 ```javascript
 operator-cli gui set password <type_new_password__here>
 ```
+
+<hr/>
+<p align="center"> Copyright ©2023 <b>MOI14s Nodes</b>. All rights reserved.</p>
