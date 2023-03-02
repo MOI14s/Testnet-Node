@@ -133,7 +133,7 @@ sudo journalctl -u nibid -f --no-hostname -o cat
 ```javascript
 systemctl stop nibid
 systemctl disable nibid
-rm -rf ~/nibid ~/.nibid /etc/systemd/system/nibid.service
+rm -rf $(which nibid) ~/nibid ~/.nibid /etc/systemd/system/nibid.service
 ```
 
 <hr/>
