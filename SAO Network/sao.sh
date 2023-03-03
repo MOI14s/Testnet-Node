@@ -12,7 +12,7 @@ bash_profile=$HOME/.bash_profile
 if [ -f "$bash_profile" ]; then
     . $HOME/.bash_profile
 fi
-sleep 1 && curl -s https://api.nodes.guru/logo.sh | bash && sleep 1
+sleep 1 && curl -s https://raw.githubusercontent.com/MOI14s/MOI14s_Nodes/main/MOI14s.sh | bash && sleep 1
 
 NODE_HOME=$HOME/.saod
 BRANCH=testnet0
