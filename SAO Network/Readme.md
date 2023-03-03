@@ -14,7 +14,7 @@
   </p>
 </div>
 
-## OFFICIAL DOCUMENT
+## OFFICIAL DOCUMENTS
 - Docs : https://docs.sao.network/
 - Run Node : https://docs.sao.network/participate-in-sao-network
 - Faucet : https://faucet.testnet.sao.network/
