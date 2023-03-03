@@ -38,6 +38,7 @@ sudo apt install make build-essential -y < "/dev/null"
 echo -e '\n\e[42mInstall Go\e[0m\n' && sleep 1
 cd $HOME
 VERSION=1.19.1
+sudo rm -rf /usr/local/go
 wget -O go.tar.gz https://go.dev/dl/go$VERSION.linux-amd64.tar.gz
 sudo rm -rf /usr/local/go && sudo tar -C /usr/local -xzf go.tar.gz && rm go.tar.gz
 echo 'export GOROOT=/usr/local/go' >> $HOME/.bash_profile
