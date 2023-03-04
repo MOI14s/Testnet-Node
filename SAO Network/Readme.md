@@ -55,7 +55,7 @@ saod tx staking create-validator \
   --min-self-delegation="1000000" \
   --gas="2000000" \
   --gas-prices="0.0025sao" \
-  --from=<wallet name>
+  --from=<wallet_name>
   ```
 
 
