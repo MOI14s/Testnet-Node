@@ -28,7 +28,7 @@
 
 ## GETTING STARTED
 > In the automated script below it is ready to install the required requirements
-#### Automatic Installations (Ubuntu 22.04)
+#### Automatic Installations
 You can manage SAO Network Incentivized Testnet `Consensus Node` easily and quickly via the automated script below
 ```javascript
 wget -q -O sao.sh https://raw.githubusercontent.com/MOI14s/Testnet-Node/main/SAO%20Network/sao.sh && chmod +x sao.sh && sudo /bin/bash sao.sh
