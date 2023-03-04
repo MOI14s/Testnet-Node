@@ -57,3 +57,40 @@ saod tx staking create-validator \
   --gas-prices="0.0025sao" \
   --from=<wallet name>
   ```
+
+
+## USEFULL COMMAND
+> Some useful commands that can be used to manage and monitor nodes
+
+**Check Node Info**
+```javascript
+saod status 2>&1 | jq .NodeInfo
+```
+**Check Validator Info**
+```javascript
+saod status 2>&1 | jq .ValidatorInfo
+```
+**Check SYNC Info**
+```javascript
+saod status 2>&1 | jq .SyncInfo
+```
+**Restart Node**
+```javascript
+systemctl restart saod
+```
+**Check Node Logs**
+```javascript
+sudo journalctl -u saod -f --no-hostname -o cat
+```
+
+## REMOVE NODE
+> Please, before deleting Node ! Make sure you have backed up your `priv_validator_key.json`
+
+```javascript
+systemctl stop saod
+systemctl disable saod
+rm -rf $(which saod) ~/sao-consensus ~/.sao /etc/systemd/system/saod.service
+```
+
+<hr/>
+<p align="center"> Copyright ©2023 <b>MOI14s Nodes</b>. All rights reserved.</p>
