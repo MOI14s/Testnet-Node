@@ -36,7 +36,7 @@ source $HOME/.bash_profile
 
 # Set Vars
 if [ ! $NODENAME ]; then
-read -p "☞ SET NODE NAME: " NODENAME
+read -p "SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
 echo ""
@@ -131,9 +131,9 @@ sudo systemctl restart $BINARY
 # SetUp Done
 echo -e '\n\e[42mSETUP DONE\e[0m\n' && sleep 1
 if [[ `service saod status | grep active` =~ "running" ]]; then
-  echo -e "YOUR $PROJECT NODE :\e[32mSUCCES INSTALLED\e[39m!"
+  echo -e "YOUR $PROJECT NODE \e[32mSUCCES INSTALLED\e[39m!"
   echo -e "CHECK RUNNING LOGS : \e[1m\e[31mjournalctl -fu $BINARY -o cat\e[0m"
-  echo -e "CEK NODE STATUS : \e[7mservice $BINARY status\e[0m"
+  echo -e "CHECK NODE STATUS : \e[7mservice $BINARY status\e[0m"
 else
   echo -e "YOUR $PROJECT NODE \e[31mWas not INSTALLED correctly\e[39m, Please REINSTALL."
 fi
