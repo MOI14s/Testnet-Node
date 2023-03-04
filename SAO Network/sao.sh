@@ -130,7 +130,7 @@ sudo systemctl restart $BINARY
 
 # SetUp Done
 echo -e '\n\e[42mSETUP DONE\e[0m\n' && sleep 1
-if [[ `service nibid status | grep active` =~ "running" ]]; then
+if [[ `service saod status | grep active` =~ "running" ]]; then
   echo -e "YOUR $PROJECT NODE :\e[32mSUCCES INSTALLED\e[39m!"
   echo -e "CHECK RUNNING LOGS : \e[1m\e[31mjournalctl -fu $BINARY -o cat\e[0m"
   echo -e "CEK NODE STATUS : \e[7mservice $BINARY status\e[0m"
