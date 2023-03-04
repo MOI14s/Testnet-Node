@@ -34,16 +34,15 @@ echo "export PROJECT=${PROJECT}" >> $HOME/.bash_profile
 echo "export CHAIN=${CHAIN}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
-# Set Vars
 if [ ! $NODENAME ]; then
-read -p "SET NODE NAME: " NODENAME
+read -p "👉🏼 SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
-echo ""
-echo -e "☛ PROJECT NAME     : \n\e[42m$PROJECT\e[0m\n"
-echo -e "☛ NODE CHAIN : \n\e[42m$CHAIN\e[0m\n"
-echo -e "☛ YOUR NODE NAME : \n\e[42m$NODENAME\e[0m\n"
-echo ""
+echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
+echo -e "👉🏼 PROJECT NAME     : \n\e[42m$PROJECT\e[0m\n"
+echo -e "👉🏼 NODE CHAIN : \n\e[42m$CHAIN\e[0m\n"
+echo -e "👉🏼 YOUR NODE NAME : \n\e[42m$NODENAME\e[0m\n"
+echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
 
 #Install GO
 echo -e '\n\e[42mINSTALL GO\e[0m\n' && sleep 1
@@ -130,10 +129,12 @@ sudo systemctl restart $BINARY
 
 # SetUp Done
 echo -e '\n\e[42mSETUP DONE\e[0m\n' && sleep 1
-if [[ `service saod status | grep active` =~ "running" ]]; then
-  echo -e "YOUR $PROJECT NODE \e[32mSUCCES INSTALLED\e[39m!"
+if [[ `service nibid status | grep active` =~ "running" ]]; then
+  echo -e "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
+  echo -e "YOUR $PROJECT NODE :\e[32mSUCCES INSTALLED\e[39m!"
   echo -e "CHECK RUNNING LOGS : \e[1m\e[31mjournalctl -fu $BINARY -o cat\e[0m"
-  echo -e "CHECK NODE STATUS : \e[7mservice $BINARY status\e[0m"
+  echo -e "CEK NODE STATUS : \e[1m\e[31mservice $BINARY status\e[0m"
+  echo -e "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
 else
   echo -e "YOUR $PROJECT NODE \e[31mWas not INSTALLED correctly\e[39m, Please REINSTALL."
 fi
