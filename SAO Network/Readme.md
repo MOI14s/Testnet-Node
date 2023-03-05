@@ -57,7 +57,16 @@ saod tx staking create-validator \
   --gas-prices="0.0025sao" \
   --from=<wallet_name>
   ```
+  
+#### Download Genesis
+```javascript
+curl -Ls https://ss-t.sao.nodestake.top/genesis.json > $HOME/.sao/config/genesis.json
+````
 
+#### Download Addrbook
+```javascript
+curl -Ls https://ss-t.sao.nodestake.top/Addrbook.json > $HOME/.sao/config/Addrbook.json
+```
 
 ## USEFULL COMMAND
 > Some useful commands that can be used to manage and monitor nodes
