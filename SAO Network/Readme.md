@@ -58,32 +58,6 @@ saod tx staking create-validator \
   --from=<wallet_name>
   ```
 
-#### State SYNC
-```javascript
-sudo systemctl stop saod
-cp $HOME/.sao/data/priv_validator_state.json $HOME/.sao/priv_validator_state.json.backup
-saod tendermint unsafe-reset-all --home ~/.sao/
-
-SNAP_RPC="https://rpc-t.sao.nodestake.top:443"
-LATEST_HEIGHT=$(curl -s $SNAP_RPC/block | jq -r .result.block.header.height); \
-BLOCK_HEIGHT=$((LATEST_HEIGHT - 1000)); \
-TRUST_HASH=$(curl -s "$SNAP_RPC/block?height=$BLOCK_HEIGHT" | jq -r .result.block_id.hash)
-echo $LATEST_HEIGHT $BLOCK_HEIGHT $TRUST_HASH
-
-sed -i.bak -E "s|^(enable[[:space:]]+=[[:space:]]+).*$|\1true| ; \
-s|^(rpc_servers[[:space:]]+=[[:space:]]+).*$|\1\"$SNAP_RPC,$SNAP_RPC\"| ; \
-s|^(trust_height[[:space:]]+=[[:space:]]+).*$|\1$BLOCK_HEIGHT| ; \
-s|^(trust_hash[[:space:]]+=[[:space:]]+).*$|\1\"$TRUST_HASH\"| ; \
-s|^(seeds[[:space:]]+=[[:space:]]+).*$|\1\"\"|" ~/.sao/config/config.toml
-more ~/.sao/config/config.toml | grep 'rpc_servers'
-more ~/.sao/config/config.toml | grep 'trust_height'
-more ~/.sao/config/config.toml | grep 'trust_hash'
-
-mv $HOME/.sao/priv_validator_state.json.backup $HOME/.sao/data/priv_validator_state.json
-sudo systemctl start saod
-journalctl -u saod -f -o cat
-```
-
 #### Download Genesis
 ```javascript
 curl -Ls https://ss-t.sao.nodestake.top/genesis.json > $HOME/.sao/config/genesis.json
