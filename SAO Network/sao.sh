@@ -96,7 +96,8 @@ sed -i -e "s/^pruning-interval *=.*/pruning-interval = \"$pruning_interval\"/" $
 
 # Enable Snapshots
 $BINARY tendermint unsafe-reset-all --home $HOME/$FOLDER --keep-addr-book
-curl -L https://snap.planq.apramweb.tech/sao/sao-snapshot-20230304.tar.lz4 | tar -Ilz4 -xf - -C $HOME/$FOLDER
+SNAP_NAME=$(curl -s https://ss-t.sao.nodestake.top/ | egrep -o ">20.*\.tar.lz4" | tr -d ">")
+curl -o - -L https://ss-t.sao.nodestake.top/${SNAP_NAME}  | lz4 -c -d - | tar -x -C $HOME/.sao
 
 # Create Service
 echo -e '\n\e[42mCREATING A SERVICE\e[0m\n' && sleep 1
