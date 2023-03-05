@@ -102,4 +102,5 @@ rm -rf $(which saod) ~/sao-consensus ~/.sao /etc/systemd/system/saod.service
 ```
 
 <hr/>
-<p align="center"> Copyright ©2023 <b>MOI14s Nodes</b>. All rights reserved.</p>
+<p align="center"> Copyright ©2023 <b>MOI14s Nodes</b>. All rights reserved.
+<p align="center">Thanks to <a href="https://nodestake.top/">NodeStake </a></p>
