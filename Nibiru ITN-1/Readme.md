@@ -138,4 +138,4 @@ rm -rf $(which nibid) ~/nibid ~/.nibid /etc/systemd/system/nibid.service
 
 <hr/>
 <p align="center"> Copyright ©2023 <b>MOI14s Nodes</b>. All rights reserved.</p>
-<p align="center"> Thanks to <a href="https://nodes.guru/">Nodes Guru</a> ~ <a href="https://discord.com/users/928575843641479198"> Whyme | NodeX Capital</a> ~ <a href="https://github.com/elangrr"> Indonode</a> ~ <a href="https://github.com/yeksin">Yeksin</a> ~ <a href="https://nodestake.top/"> Nodestake</a>
+<p align="center"> Thanks to <a href="https://nodes.guru/">Nodes Guru</a> ~ <a href="https://discord.com/users/928575843641479198"> Whyme | NodeX Capital</a> ~ <a href="https://github.com/elangrr"> Indonode</a> ~ <a href="https://github.com/yeksin">Yeksin</a> ~ <a href="https://nodestake.top/"> Nodestake</a> & All Friends.
