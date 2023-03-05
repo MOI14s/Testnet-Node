@@ -30,8 +30,8 @@ GEN="https://raw.githubusercontent.com/SAONetwork/sao-consensus/testnet0/network
 GIT_FOLDER=sao-consensus
 FOLDER=.sao
 DENOM=sao
-GENESIS=
-ADDRBOOK=
+GENESIS=https://ss-t.sao.nodestake.top/genesis.json
+ADDRBOOK=https://ss-t.sao.nodestake.top/Addrbook.json
 GO_VERSION=1.19.1
 
 echo "export PROJECT=${PROJECT}" >> $HOME/.bash_profile
@@ -89,6 +89,10 @@ cd $HOME
 # Set Peers
 PEERS="0b777727937be8664a65ea0f8abc082e725879be@185.188.249.18:10656"
 sed -i -e "s|^persistent_peers *=.*|persistent_peers = \"$PEERS\"|" $HOME/$FOLDER/config/config.toml
+
+# Download Genesis & AddrBook
+curl $GENESIS > $HOME/$FOLDER/config/genesis.json
+curl $ADDRBOOK >  > $HOME/$FOLDER/config/Addrbook.json
 
 pruning="custom"
 pruning_keep_recent="100"
