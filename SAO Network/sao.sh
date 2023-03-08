@@ -17,6 +17,9 @@ if [ -f "$bash_profile" ]; then
 fi
 sleep 1 && curl -s https://raw.githubusercontent.com/MOI14s/MOI14s_Nodes/main/MOI14s.sh | bash && sleep 1
 
+# Variable Color
+LM=\e[95m
+
 # Variable
 PROJECT="SAO Network"
 BRANCH=testnet0
@@ -39,7 +42,7 @@ read -p "SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
-echo -e "PROJECT NAME: \e[95m$PROJECT\e[0m"
+echo -e "PROJECT NAME: 4LM$PROJECT"
 echo -e "NODE CHAIN: \e[95m$CHAIN\e[0m"
 echo -e "U NODE NAME: \e[95m$NODENAME\e[0m"
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
