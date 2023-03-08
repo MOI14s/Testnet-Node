@@ -35,13 +35,13 @@ echo "export CHAIN=${CHAIN}" >> $HOME/.bash_profile
 source $HOME/.bash_profile
 
 if [ ! $NODENAME ]; then
-read -p "👉🏼 SET NODE NAME: " NODENAME
+read -p "SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
-echo -e "👉🏼 PROJECT NAME: \e[95m$PROJECT\e"
-echo -e "👉🏼 NODE CHAIN: \e[95m$CHAIN\e"
-echo -e "👉🏼 U NODE NAME: \e[95m$NODENAME\e"
+echo -e "PROJECT NAME: \e[95m$PROJECT\e[0m"
+echo -e "NODE CHAIN: \e[95m$CHAIN\e[0m"
+echo -e "U NODE NAME: \e[95m$NODENAME\e[0m"
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
 
 #Install GO
