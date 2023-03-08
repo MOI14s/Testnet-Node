@@ -17,9 +17,6 @@ if [ -f "$bash_profile" ]; then
 fi
 sleep 1 && curl -s https://raw.githubusercontent.com/MOI14s/MOI14s_Nodes/main/MOI14s.sh | bash && sleep 1
 
-# Variable Color
-LM=\e[95m
-
 # Variable
 PROJECT="SAO Network"
 BRANCH=testnet0
@@ -134,9 +131,9 @@ sudo systemctl restart $BINARY
 echo -e '\n\e[42mSETUP DONE\e[0m\n' && sleep 1
 if [[ `service $BINARY status | grep active` =~ "running" ]]; then
   echo -e "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
-  echo -e "YOUR $PROJECT NODE :\e[32mSUCCES INSTALLED\e[39m!"
-  echo -e "CHECK RUNNING LOGS : \e[1m\e[31mjournalctl -fu $BINARY -o cat\e[0m"
-  echo -e "CEK NODE STATUS : \e[1m\e[31mservice $BINARY status\e[0m"
+  echo -e "YOUR $PROJECT NODE :\e[92mSUCCES INSTALLED\e[39m!"
+  echo -e "CHECK RUNNING LOGS : \e[92m\e[31mjournalctl -fu $BINARY -o cat\e[0m"
+  echo -e "CEK NODE STATUS : \e[92mservice $BINARY status\e[0m"
   echo -e "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
 else
   echo -e "YOUR $PROJECT NODE \e[31mWas not INSTALLED correctly\e[39m, Please REINSTALL."
