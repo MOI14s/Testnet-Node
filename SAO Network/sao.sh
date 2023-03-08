@@ -42,7 +42,7 @@ read -p "SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
-echo -e "PROJECT NAME: 4LM$PROJECT"
+echo -e "PROJECT NAME: $LM$PROJECT"
 echo -e "NODE CHAIN: \e[95m$CHAIN\e[0m"
 echo -e "U NODE NAME: \e[95m$NODENAME\e[0m"
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
