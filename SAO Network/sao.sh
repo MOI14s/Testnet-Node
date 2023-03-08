@@ -39,9 +39,9 @@ read -p "👉🏼 SET NODE NAME: " NODENAME
 echo 'export NODENAME='\"${NODENAME}\" >> $HOME/.bash_profile
 fi
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
-echo -e "👉🏼 PROJECT NAME: \n\e[42m$PROJECT\e[0m\n"
-echo -e "👉🏼 NODE CHAIN: \n\e[42m$CHAIN\e[0m\n"
-echo -e "👉🏼 U NODE NAME: \n\e[42m$NODENAME\e[0m\n"
+echo -e "👉🏼 PROJECT NAME: \e[95m$PROJECT\e"
+echo -e "👉🏼 NODE CHAIN: \e[95m$CHAIN\e"
+echo -e "👉🏼 U NODE NAME: \e[95m$NODENAME\e"
 echo "❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇❇"
 
 #Install GO
