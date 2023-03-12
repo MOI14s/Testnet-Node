@@ -23,7 +23,7 @@
 > Minimum Hardware Specifications that will be used to run the node
     
 | vCPU | RAM | DISK | OS |
-| :--  | :-- | :--- | :- |
+| :--: | :--: | :--: | :--: |
 | 4+ | 8+ | 100+ GB | ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)|
 
 ## GETTING STARTED
